@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AluraBook</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="cabecalho__menu__logo">
+        <input
+          type="checkbox"
+          id="menu"
+          class="cabecalho__menu__burguer__check"
+        />
+        <div class="cabecalho__container__menu__burguer">
+          <label for="menu">
+            <svg
+              width="36"
+              height="24"
+              viewBox="0 0 36 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="cabecalho__menu__burguer"
+            >
+              <path
+                d="M0 24H36V20H0V24ZM0 14H36V10H0V14ZM0 0V4H36V0H0Z"
+                fill="#002F52"
+              />
+            </svg>
+          </label>
+        </div>
+        <ul class="cabecalho__lista">
+          <li class="cabecalho__lista__titulo">Categorias</li>
+          <li class="cabecalho__lista__item">
+            <a class="cabecalho__lista__link" href="#">PROGRAMAÇÃO</a>
+          </li>
+          <li class="cabecalho__lista__item">
+            <a class="cabecalho__lista__link" href="#">FRONT-END</a>
+          </li>
+          <li class="cabecalho__lista__item">
+            <a class="cabecalho__lista__link" href="#">INFRAESTRUTURA</a>
+          </li>
+          <li class="cabecalho__lista__item">
+            <a class="cabecalho__lista__link" href="#">BUSINESS</a>
+          </li>
+          <li class="cabecalho__lista__item">
+            <a class="cabecalho__lista__link" href="#">DESIGN & UX</a>
+          </li>
+        </ul>
+        <img class="cabecalho__logo" src="./assets/logo.svg" />
+      </div>
+      <div class="cabecalho__icones">
+        <a><img src="./assets/favorito.svg" class="cabecalho__icone" /></a>
+        <a><img src="./assets/sacola.svg" class="cabecalho__icone" /></a>
+        <a><img src="./assets/perfil.svg" class="cabecalho__icone" /></a>
+      </div>
+    </header>
+    <main>
+      <section class="banner">
+        <h1 class="banner__titulo">Já sabe por onde começar?</h1>
+        <p class="banner__paragrafo">
+          Encontre em nossa estante o que precisa para seu desenvolvimento!
+        </p>
+        <div class="banner__container__input__search">
+          <svg
+            class="banner__icone__search"
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.5 11H11.71L11.43 10.73C12.41 9.59 13 8.11 13 6.5C13 2.91 10.09 0 6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C8.11 13 9.59 12.41 10.73 11.43L11 11.71V12.5L16 17.49L17.49 16L12.5 11ZM6.5 11C4.01 11 2 8.99 2 6.5C2 4.01 4.01 2 6.5 2C8.99 2 11 4.01 11 6.5C11 8.99 8.99 11 6.5 11Z"
+              fill="white"
+            />
+          </svg>
+          <input
+            type="text"
+            class="banner__input__search"
+            placeholder="Qual será sua próxima leitura?"
+          />
+        </div>
+      </section>
+
+      <section class="carrossel">
+        <h1 class="carrossel__titulo">ÚLTIMOS LANÇAMENTOS</h1>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="./assets/ApacheKafka.svg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/Arquitetura.svg" />
+            </div>
+            <div class="swiper-slide"><img src="./assets/Gestão.svg" /></div>
+            <div class="swiper-slide"><img src="./assets/Gestão2.svg" /></div>
+            <div class="swiper-slide">
+              <img src="./assets/Javascript.svg" />
+            </div>
+            <div class="swiper-slide"><img src="./assets/Liderança.svg" /></div>
+            <div class="swiper-slide">
+              <img src="./assets/MetricasAgeis.svg" />
+            </div>
+          </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+
+      <section class="card__angular">
+        <div class="card__angular__conteudo">
+          <h2 class="card__angular__conteudo__titulo">
+            Talvez você também se interesse por...
+          </h2>
+          <h1 class="card__angular__conteudo__subtitulo">
+            Angular 11 e Firebase
+          </h1>
+          <p class="card__angular__conteudo__paragrafo">
+            Construindo uma aplicação integrada com a plataforma do Google.
+          </p>
+          <div class="card__angular__conteudo__icones">
+            <img src="./assets/favorito.svg" class="card__angular__conteudo__icone"/>
+            <img src="./assets/sacola.svg" class="card__angular__conteudo__icone"/>
+          </div>
+        </div>
+        <div class="card__angular__conteudo__imagem">
+          <img src="./assets/Angular.svg" />
+          <a class="card__angular__conteudo__imagem__saiba__mais">Saiba mais</a>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper(".swiper", {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "bullets",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
