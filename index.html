@@ -54,10 +54,27 @@
             <a class="cabecalho__lista__link" href="#">DESIGN & UX</a>
           </li>
         </ul>
-        <img class="cabecalho__logo" src="./assets/logo.svg" />
+        <div class="cabecalho__logos">
+          <img src="./assets/AluraBooks.svg" class="cabecalho__logo__nome" />
+          <img class="cabecalho__logo" src="./assets/logo.svg" />
+        </div>
+        <div class="cabecalho__opcoes">
+          <input
+            type="checkbox"
+            id="menu"
+            class="cabecalho__menu__burguer__check"
+          />
+          <div class="cabecalho__opcoes__menu">
+            <label for="menu" class="cabecalho__opcoes__menu__label">
+              <p>CATEGORIAS</p>
+            </label>
+            <p>FAVORITOS</p>
+            <p>MINHA ESTANTE</p>
+          </div>
+        </div>
       </div>
       <div class="cabecalho__icones">
-        <a><img src="./assets/favorito.svg" class="cabecalho__icone" /></a>
+        <a><img src="./assets/favorito.svg" class="cabecalho__icone favorito" /></a>
         <a><img src="./assets/sacola.svg" class="cabecalho__icone" /></a>
         <a><img src="./assets/perfil.svg" class="cabecalho__icone" /></a>
       </div>
@@ -123,34 +140,251 @@
       </section>
 
       <section class="card__angular">
-        <div class="card__angular__conteudo">
-          <h2 class="card__angular__conteudo__titulo">
-            Talvez você também se interesse por...
-          </h2>
-          <h1 class="card__angular__conteudo__subtitulo">
-            Angular 11 e Firebase
-          </h1>
-          <p class="card__angular__conteudo__paragrafo">
-            Construindo uma aplicação integrada com a plataforma do Google.
-          </p>
-          <div class="card__angular__conteudo__icones">
-            <img src="./assets/favorito.svg" class="card__angular__conteudo__icone"/>
-            <img src="./assets/sacola.svg" class="card__angular__conteudo__icone"/>
+        <div class="card__angular__container">
+          <div class="card__angular__conteudo">
+            <h2 class="card__angular__conteudo__titulo">
+              Talvez você também se interesse por...
+            </h2>
+            <h1 class="card__angular__conteudo__subtitulo">
+              Angular 11 e Firebase
+            </h1>
+            <p class="card__angular__conteudo__paragrafo">
+              Construindo uma aplicação integrada com a plataforma do Google.
+            </p>
+            <div class="card__angular__conteudo__icones">
+              <img
+                src="./assets/favorito.svg"
+                class="card__angular__conteudo__icone"
+              />
+              <img
+                src="./assets/sacola.svg"
+                class="card__angular__conteudo__icone"
+              />
+            </div>
+          </div>
+          <div class="card__angular__conteudo__imagem">
+            <img src="./assets/Angular.svg" />
+            <a class="card__angular__conteudo__imagem__saiba__mais"
+              >Saiba mais</a
+            >
           </div>
         </div>
-        <div class="card__angular__conteudo__imagem">
-          <img src="./assets/Angular.svg" />
-          <a class="card__angular__conteudo__imagem__saiba__mais">Saiba mais</a>
+      </section>
+
+      <section class="carrossel">
+        <h1 class="carrossel__titulo">Mais vendidos</h1>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="./assets/ApacheKafka.svg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/Arquitetura.svg" />
+            </div>
+            <div class="swiper-slide"><img src="./assets/Gestão.svg" /></div>
+            <div class="swiper-slide"><img src="./assets/Gestão2.svg" /></div>
+            <div class="swiper-slide">
+              <img src="./assets/Javascript.svg" />
+            </div>
+            <div class="swiper-slide"><img src="./assets/Liderança.svg" /></div>
+            <div class="swiper-slide">
+              <img src="./assets/MetricasAgeis.svg" />
+            </div>
+          </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+
+      <section class="card__angular">
+        <div class="card__angular__container">
+          <div class="card__angular__conteudo">
+            <div class="card__angular__conteudo__estrelas">
+              <img src="./assets/estrela.svg" />
+              <img src="./assets/estrela.svg" />
+              <img src="./assets/estrela.svg" />
+              <img src="./assets/estrela.svg" />
+              <img src="./assets/estrela.svg" />
+            </div>
+            <h2 class="card__angular__conteudo__titulo">Autora do Mês</h2>
+            <h1 class="card__angular__conteudo__subtitulo">Juliana Agarikov</h1>
+            <p class="card__angular__conteudo__paragrafo">
+              Analista de sistemas e escritora, Juliana é especialista em
+              Front-End.
+            </p>
+            <div class="card__angular__conteudo__icones">
+              <img
+                src="./assets/favorito.svg"
+                class="card__angular__conteudo__icone"
+              />
+              <img
+                src="./assets/sacola.svg"
+                class="card__angular__conteudo__icone"
+              />
+            </div>
+          </div>
+          <div class="card__angular__conteudo__imagem">
+            <img src="./assets/perfil-escritora.svg" />
+            <a class="card__angular__conteudo__imagem__saiba__mais"
+              >Saiba mais</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="banner">
+        <h1 class="banner__titulo">TÓPICOS VISITADOS RECENTEMENTE</h1>
+        <div class="banner__topicos">
+          <a href="" class="banner__topico">Android</a>
+          <a href="" class="banner__topico">Marketing Digital</a>
+          <a href="" class="banner__topico">Agile</a>
+          <a href="" class="banner__topico">Startups</a>
+          <a href="" class="banner__topico">HTML & CSS</a>
+          <a href="" class="banner__topico">Python</a>
+          <a href="" class="banner__topico">GO</a>
+          <a href="" class="banner__topico">Java</a>
         </div>
       </section>
     </main>
-    <footer></footer>
+
+    <footer class="footer">
+      <div class="footer__container__conteudo">
+        <div class="footer__conteudo">
+          <h2 class="footer__titulo">Fique por dentro das novidades!</h2>
+          <p class="footer__paragrafo">
+            Atualizações de e-books, novos livros, promoções e outros.
+          </p>
+        </div>
+        <div class="footer__container__input__mail">
+          <!-- <svg
+            class="footer__icone__mail"
+            width="20"
+            height="16"
+            viewBox="0 0 20 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20 2C20 0.9 19.1 0 18 0H2C0.9 0 0 0.9 0 2V14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V2ZM18 2L10 6.99L2 2H18ZM18 14H2V4L10 9L18 4V14Z"
+              fill="url(#paint0_linear_123_3877)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_123_3877"
+                x1="8.35648"
+                y1="-1.92001"
+                x2="36.9873"
+                y2="2.8188"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#002F52" />
+                <stop offset="1" stop-color="#326589" />
+              </linearGradient>
+            </defs>
+          </svg> -->
+
+          <input
+            type="text"
+            class="footer__input__mail"
+            placeholder="Cadastre seu e-mail"
+          />
+        </div>
+      </div>
+      <hr class="footer__hr" />
+      <div class="footer__info">
+        <h2>Grupo Alura</h2>
+        <div class="footer__container__info">
+          <div class="footer__info__container">
+            <p>Educação</p>
+            <div class="footer__info__container__logo__service">
+              <img src="./assets/Caelum.svg" />
+              <p>Caelum</p>
+            </div>
+            <div class="footer__info__container__logo__service">
+              <img src="./assets/CasaDoCodigo.svg" />
+              <p>Casa do Código</p>
+            </div>
+          </div>
+
+          <div class="footer__info__container">
+            <p>Educação Online</p>
+            <div class="footer__info__container__logo__service">
+              <img src="./assets/Alura.svg" />
+              <p>Alura</p>
+            </div>
+            <div class="footer__info__container__logo__service">
+              <img src="./assets/AluraEmpresas.svg" />
+              <p>Alura Para Empresas</p>
+            </div>
+            <div class="footer__info__container__logo__service">
+              <img src="./assets/Alura.svg" />
+              <p>Alura LATAM</p>
+            </div>
+            <div class="footer__info__container__logo__service">
+              <img src="./assets/AluraStart.svg" />
+              <p>Alura Start</p>
+            </div>
+            <div class="footer__info__container__logo__service">
+              <img src="./assets/MusicDot.svg" />
+              <p>MusicDot</p>
+            </div>
+            <div class="footer__info__container__logo__service">
+              <img src="./assets/AluraLingua.svg" />
+              <p>Alura Língua</p>
+            </div>
+            <div class="footer__info__container__logo__service">
+              <img src="./assets/PM3.svg" />
+              <p>PM3</p>
+            </div>
+          </div>
+
+          <div class="footer__info__container">
+            <p>Comunidade</p>
+            <div class="footer__info__container__logo__service">
+              <img src="./assets/HipstersTech.svg" />
+              <p>Hipsters ponto Tech</p>
+            </div>
+            <div class="footer__info__container__logo__service">
+              <img src="./assets/ScubaDev.svg" />
+              <p>Scuba Dev</p>
+            </div>
+            <div class="footer__info__container__logo__service">
+              <img src="./assets/LayersTech.svg" />
+              <p>Layers ponto Tech</p>
+            </div>
+            <div class="footer__info__container__logo__service">
+              <img src="./assets/LikeABoss.svg" />
+              <p>Like a Boss</p>
+            </div>
+            <div class="footer__info__container__logo__service">
+              <img src="./assets/CarreiraSemFronteira.svg" />
+              <p>Carreira sem Fronteira</p>
+            </div>
+            <div class="footer__info__container__logo__service">
+              <img src="./assets/HipstersJobs.svg" />
+              <p>Hispers ponto Jobs</p>
+            </div>
+            <div class="footer__info__container__logo__service">
+              <img src="./assets/GUJ.svg" />
+              <p>GUJ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
       const swiper = new Swiper(".swiper", {
-        spaceBetween: 10,
+        spaceBetween: 100,
         slidesPerView: 3,
         pagination: {
           el: ".swiper-pagination",
